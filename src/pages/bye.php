@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/init.php';
+$name = $request->get('name', 'World') ?>
 
-$response->setContent('Goodbye!');
-$response->send();
+Bye <?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>
+
